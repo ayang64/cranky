@@ -24,7 +24,7 @@ func Pow10(e uint64) uint64 {
 func undigitize(s []uint64) uint64 {
 	rc := uint64(0)
 	for cur := s; len(cur) > 0; cur = cur[1:] {
-		rc += cur[0] * pow10(uint64(len(cur)-1))
+		rc += cur[0] * Pow10(uint64(len(cur)-1))
 	}
 	return rc
 }
