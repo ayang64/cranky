@@ -48,7 +48,7 @@ func permute(d []uint64) <-chan [2]uint64 {
 	return rc
 }
 
-func SumCranky(j int, start uint64, count uint64) uint64 {
+func Sum(j int, start uint64, count uint64) uint64 {
 	reverse := func(s []uint64) []uint64 {
 		rc := make([]uint64, len(s), len(s))
 		for i := 0; i < len(s); i++ {

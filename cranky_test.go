@@ -31,8 +31,8 @@ func TestDigitize(t *testing.T) {
 	}
 }
 
-func TestSumCranky(t *testing.T) {
-	if sum, expected := SumCranky(runtime.NumCPU(), 0, pow10(6)), uint64(1778723); sum != expected {
+func TestSum(t *testing.T) {
+	if sum, expected := Sum(runtime.NumCPU(), 0, pow10(6)), uint64(1778723); sum != expected {
 		t.Logf("sum is %d; expected %d", sum, expected)
 	}
 }
