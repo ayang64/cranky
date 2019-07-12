@@ -13,7 +13,7 @@ func gen(start uint64, count uint64, depth int) <-chan uint64 {
 	return rc
 }
 
-func pow10(e uint64) uint64 {
+func Pow10(e uint64) uint64 {
 	rc := uint64(1)
 	for i := uint64(0); i < e; i++ {
 		rc *= 10
